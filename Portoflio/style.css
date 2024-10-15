@@ -219,3 +219,23 @@ h1, h2, h3, p {
     gap: 10px; /* Reduced gap on mobile */
   }
 }
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Two columns for larger screens */
+  gap: 20px; /* Space between items */
+}
+
+/* Media Queries for Mobile Responsiveness */
+@media (max-width: 768px) {
+  .portfolio-grid {
+    grid-template-columns: repeat(2, 1fr); /* Two columns on mobile */
+  }
+
+  .portfolio-item {
+    margin: 0; /* Remove margin for mobile */
+  }
+
+  .portfolio-grid {
+    gap: 10px; /* Reduced gap on mobile */
+  }
+}
